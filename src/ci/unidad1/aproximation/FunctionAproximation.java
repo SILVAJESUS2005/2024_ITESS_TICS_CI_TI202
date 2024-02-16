@@ -32,13 +32,16 @@ public class FunctionAproximation {
         dx = (xEnd - xIn) / n;
         for (int i = 0; i <= n; i++) {
             x[i] = xIn + i * dx;
-            fx[i] = x[i] * x[i];
+            /*fx[i] = x[i] * x[i];*/
+            fx[i] = 1/x[i];
             area = area + fx[i] * dx;
         }
     }
 
     public double getArea() {
         return area;
+        
+        
     }
 
 }
