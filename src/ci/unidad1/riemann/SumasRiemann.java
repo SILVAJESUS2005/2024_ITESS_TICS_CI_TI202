@@ -40,5 +40,14 @@ public class SumasRiemann {
     public double funcion(double x){
         return 1.0;
     }
+    public void print(){
+        System.out.println("i   |   wi  |   dxi |   fi  ");
+        for(int i=0; i<w.length; i++){
+            System.out.println(i+"  |   "+w[i] + "     |   "
+            +dx[i]+ "  |   "+fw[i]);
+            System.out.println("Suma: "+suma);
+        
+    }
+    }
     
 }
